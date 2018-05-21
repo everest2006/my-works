@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./script/index.js" async></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="skirt">
+                    <p>skirt cars</p>
+                    <div class="skirts-list">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="difficulty">
+                    <p>game difficulty</p>
+                    <div class="difficulty-list">
+                        <div>low (5 x 2)</div>
+                        <div>medium (6 x 3)</div>
+                        <div>high (8 x 3)</div>
+                    </div>
+                </div>
+                <div class="new">
+                    <p>new game</p>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <p class="message-skirt"></p>
+            <p class="message-difficulty"></p>
+            <p class="time"></p>
+            <div class="field">
+                <div class="description">
+                    <p>How to play:<br>Memory is a counter game where the object is to find pairs.<br>
+                        When the game begins, all pictures are hidden.<br>To Play:
+                    </p>
+                    <ol>
+                        <li>Select two cards to try to match the pictures.</li>
+                        <li>If you match the pictures you can go again.</li>
+                        <li>If they don’t match it is the computer turn them.</li>
+                        <li>The player that finds all pairs wins!</li>
+                        <li>Have Fun!</li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+        <div class="win">
+            <div class="overlay"></div>
+            <div class="visible">
+                <h2>congratulation</h2>
+                <p>you win</p>
+                <p></p>
+                <button type="button" onClick="document.getElementsByClassName('win')[0].style.display='none';">закрыть</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

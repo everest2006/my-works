@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'GenBkBasBold';
+    src: url('../fonts/GenBkBasB.ttf');
+}
+
+@font-face {
+    font-family: 'YesevaOne';
+    src: url('../fonts/YesevaOne.ttf');
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/georgia.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/OpenSans-Italic.ttf');
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header-wrappper{
+    display: flex;
+    width: 1170px;
+    height: 77%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 710.1px;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-family: GenBkBasBold;
+    font-size: 21px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 24.03px;
+    font-family: YesevaOne;
+    color: rgb(0, 0, 0);
+    margin-left: -60px;
+    letter-spacing: -1.2px;
+    -moz-transform: matrix( 0.78468899521531,0,0,0.78333333333333,0,0);
+    -webkit-transform: matrix( 0.78468899521531,0,0,0.78333333333333,0,0);
+    -ms-transform: matrix( 0.78468899521531,0,0,0.78333333333333,0,0);
+}
+
+header{
+    background-image: url("../img/bg.png");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 159px;
+    z-index: 284;
+}
+
+.social-icons{
+    color: #dab33e;
+    font-size: 21px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-left: 20.7px;
+}
+
+.social-icons span:nth-child(1){
+    width: 22px;
+    font-size: 19px;
+}
+
+.social-icons span:nth-child(2){
+    width: 18px;
+}
+
+.social-icons span:nth-child(3){
+    width: 15px;
+}
+
+.promo{
+    height: 750px;
+    background-image: url("../img/BgPromo.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.callout-text {
+    font-size: 90px;
+    font-family: YesevaOne;
+    color: rgba(255, 255, 255, 0.922);
+    line-height: 1.32;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+    width: 970px;
+}
+
+.decoration{
+    background-image: url("../img/Decoration.png");
+    width: 232px;
+    height: 43px;
+    margin-bottom: 34px;
+    margin-top: 23px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 486px;
+    height: 55px;
+    margin-bottom: 144px;
+}
+
+.button-black, .button-white{
+    width: 226px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: LatoRegular;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+}
+
+.button-black{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.702);
+    opacity: 0.8;
+    z-index: 270;
+}
+
+.button-white{
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.278);
+    opacity: 0.702;
+    z-index: 266;
+}
+
+.about{
+    background-image: url("../img/pattern.png");
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+.dish{
+    background-image: url("../img/dish.png");
+    width: 621px;
+    height: 625px;
+}
+
+.about-content{
+    width: calc(1600px - 480px - 621px - 43px - 24px);
+    padding-top: 45px;
+    padding-left: 43px;
+    padding-right: 24px;
+}
+
+.about-content h2{
+    font-size: 36px;
+    font-family: YesevaOne;
+    color: rgb(204, 153, 0);
+    text-align: center;
+}
+
+.about-content h2:first-letter{
+    text-transform: uppercase;
+}
+
+.divider{
+    background-image: url("../img/Divider.png");
+    width: 247px;
+    height: 24px;
+    margin: 13px auto 26px auto;
+}
+
+.about-content p {
+    font-size: 16px;
+    font-family: LatoRegular;
+    color: rgb(76, 76, 76);
+    line-height: 1.5;
+    text-align: center;
+    width: 409px;
+    height: 111px;
+    margin: 0 auto;
+}
+
+.cook{
+    background-image: url("../img/cook.png");
+    width: 219px;
+    height: 221px;
+    margin: 58px 0 0 142px;
+}
+
+.ingredients{
+    display: flex;
+    align-items: center;
+    background-image: url("../img/ingredients-bg.png");
+    width: 100%;
+    height: 758px;
+}
+
+.ingredients-content {
+    border-width: 0.06px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0,0.671);
+    width: 430px;
+    height: 557px;
+    margin-right: 215px;
+    margin-left: auto;
+    padding: 0 70px;
+}
+
+.divider-white{
+    background-image: url("../img/Divider-white.png");
+    width: 247px;
+    height: 24px;
+    margin: 0 auto;
+}
+.ingredients-content h2{
+    font-size: 36px;
+    font-family: YesevaOne;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 74px;
+    margin-bottom: 15px;
+}
+
+.ingredients-content h2::first-letter{
+    text-transform: uppercase;
+}
+
+.ingredients-content p{
+    font-size: 16px;
+    font-family: LatoRegular;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.ingredients-image{
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    margin: 0 auto;
+    margin-top: 68px;
+}
+
+.border-img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.09);
+    width: 100px;
+    height: 100px;
+}
+
+.grain, .red-things, .bread{
+    position: absolute;
+}
+
+.grain{
+    top: -36px;
+    left: -50px;
+}
+
+.red-things{
+    top: -94px;
+    left: -47px;
+}
+
+.bread{
+    top: -21px;
+    left: -48px;
+}
+
+.menu{
+    background-image: url("../img/menu-bg.png");
+    width: 100%;
+    height: 994px;
+}
+
+.menu-wrapper{
+    width: 1056px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+
+.menu-colum{
+    width: 454px;
+}
+
+.menu-container{
+    margin-top: 61px;
+    padding-bottom: 3px;
+}
+
+.menu-container-head{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 19.5px;
+}
+
+.menu-container-row{
+    padding: 0 11px;
+}
+
+.menu-container-colum{
+    padding: 9.5px 0;
+}
+
+.menu-container-row:nth-child(n+3){
+    margin-top: 17px;
+}
+
+.menu-category{
+    font-size: 36px;
+    font-family: YesevaOne;
+    color: rgb(204, 153, 0);
+    line-height: 0.667;
+    text-align: center;
+}
+
+.menu-category:after{
+    content: "";
+    width: 247px;
+    height: 24px;
+    background-image: url("../img/Divider.png");
+    display: block;
+    margin-top: 22px;
+}
+
+.menu-dish, .menu-price{
+    font-size: 21px;
+    font-family: YesevaOne;
+    color: rgb(200, 159, 45);
+    line-height: 1.143;
+    word-spacing: 2px;
+}
+
+.menu-price{
+    text-align: end;
+}
+
+.menu-description{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.06px solid rgb(231, 231, 218);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-description-dish{
+    font-size: 16px;
+    font-family: LatoRegular;
+    color: rgb(76, 76, 76);
+}
+
+.special{
+    border: 0.5px solid rgb(204, 153, 0);
+    height: 80px;
+    position: relative;
+}
+
+.special:before {
+    content: 'Special';
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    left: 84.6%;
+    background-color: rgb(214, 165, 104);
+    top: -22px;
+    color: rgb(231, 218, 178);
+    padding-top: 2px;
+}
+
+.reviews{
+    width: 100%;
+    height: 758px;
+    background-image: url("../img/reviews-bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-container{
+    width: 630px;
+    height: 483px;
+    border-width: 0.06px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 74px 70px 0;
+    text-align: center;
+
+}
+
+.reviews-title{
+    font-size: 36px;
+    font-family: YesevaOne;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.reviews-title:after{
+    content: "";
+    width: 247px;
+    height: 24px;
+    background-image: url("../img/Divider-white.png");
+    display: block;
+    margin: 14px auto 0 auto;
+}
+
+.reviews-quote{
+    font-size: 25px;
+    font-family: GenBkBasBold;
+    color: rgb(221, 224, 223);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 27px;
+    position: relative;
+}
+.reviews-author{
+    font-size: 18px;
+    font-family: LatoRegular;
+    color: rgb(221, 224, 223);
+    line-height: 1.8;
+    text-align: center;
+}
+
+.reviews-quote:before{
+    content: "“";
+    font-size: 96px;
+    font-family: Georgia;
+    color: rgba(242, 244, 244, 0.471);
+    line-height: 0.469;
+    position: absolute;
+    left: -42px;
+    top: 11px;
+}
+
+.reservations{
+    max-width: 100%;
+    height: 708px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 215px;
+    padding-right: 285px;
+}
+
+.reservations-picture-container{
+    width: calc(300px + 270px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservations-form{
+    width: 430px;
+    text-align: center;
+    height: 507px;
+    padding-top: 10px;
+}
+
+.reservations-form-title{
+    font-size: 36px;
+    font-family: YesevaOne;
+    color: rgb(204, 153, 0);
+    line-height: 0.667;
+}
+
+.reservations-form-title:after{
+    content: "";
+    width: 247px;
+    height: 24px;
+    background-image: url("../img/Divider.png");
+    display: block;
+    margin: 19px auto 26px auto;
+}
+
+
+.reservations-form-quote{
+    font-size: 16px;
+    font-family: LatoRegular;
+    color: rgb(76, 76, 76);
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.reservations-form form input{
+    border-width: 1px;
+    border-color: rgb(200, 159, 45);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 198px;
+    height: 34px;
+}
+
+.reservations-form form label{
+    font-family: OpenSansBold;
+    font-size: 14px;
+    color: rgb(201,161,49);
+    line-height: 1.5;
+}
+
+::-webkit-input-placeholder{
+    font-family: OpenSansItalic;
+    font-size: 16px;
+    color: rgb(167, 168, 168);
+    padding-left: 15px;
+}
+::-moz-placeholder{
+    font-family: OpenSansItalic;
+    font-size: 16px;
+    color: rgb(167, 168, 168);
+    padding-left: 15px;
+}
+:-ms-input-placeholder{
+    font-family: OpenSansItalic;
+    font-size: 16px;
+    color: rgb(167, 168, 168);
+    padding-left: 15px;
+}
+:-moz-placeholder{font-family: OpenSansItalic;
+    font-size: 16px;
+    color: rgb(167, 168, 168);
+    padding-left: 15px;
+}
+.reservations-form form select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-width: 1px;
+    border-color: rgb(200, 198, 198);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 198px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgb(167, 168, 168);
+    padding-left: 15px;
+}
+
+.select{
+    position: relative;
+    width: 198px;
+    margin-top: 3px;
+    height: 36px;
+}
+
+.reservations-form form input[type="submit"]{
+    font-size: 16px;
+    font-family: OpenSans;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    background-color: rgba(200, 159, 45, 0.98);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+}
+
+.form-container-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container-colum{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type='text']{
+    margin-top: 5px;
+}
+
+label[for='date']{
+    margin-top: 23px;
+}
+
+.reservations-form form input[type='date']{
+    margin-top: 3px;
+    padding-left: 13px;
+    width: 185px;
+}
+
+input[type='email']{
+    margin-top: 5px;
+}
+
+label[for='party_number']{
+    margin-top: 23px;
+}
+
+.form-container-submit{
+    margin-top: 34px;
+}
+
+footer {
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper{
+    width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.footer-wrapper div{
+    width: 370px;
+}

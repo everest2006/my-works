@@ -1,0 +1,523 @@
+*   {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face  {
+    font-family: Bebas;
+    src: url(fonts/bebas.woff);
+}
+
+@font-face  {
+    font-family: Calibri;
+    src: url(fonts/Calibri.woff);
+}
+
+@font-face  {
+    font-family: StMarie;
+    src: url(fonts/StMarie.woff);
+}
+
+body, html  {
+    height: 100%;
+}
+
+body    {
+    position: relative;
+    cursor: auto;
+}
+
+main    {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+header  {
+    width: 100%;
+    height: 128px;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 9999;
+    background-color: rgb(255,255,255);
+}
+
+footer  {
+    height: 70px;
+    width: 100%;
+    bottom: auto;
+    background-color: #fb9c06;
+}
+.rabbit-logo    {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 347px;
+    vertical-align: middle;
+    padding-top: 26px;
+    height: 88px;
+}
+
+nav a   {
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 22px;
+    color: rgb(158,155,155)
+}
+
+.home-icon:before   {
+    content: "";
+    width: 50px;
+    height: 70px;
+    background: url("../img/icons.gif") no-repeat -4px;
+    position: absolute;
+    top: 8px;
+}
+
+.about-icon {
+    margin-left: 69px;
+}
+
+.about-icon:before  {
+    content: "";
+    width: 50px;
+    height: 70px;
+    background: url("../img/icons.gif") no-repeat -72px;
+    position: absolute;
+    top: 9px;
+}
+
+.work-icon {
+    margin-left: 66px;
+}
+
+.work-icon:before   {
+    content: "";
+    width: 50px;
+    height: 70px;
+    background: url("../img/icons.gif") no-repeat -136px;
+    position: absolute;
+    top: 9px;
+}
+
+.blog-icon  {
+    margin-left: 75px;
+}
+
+.blog-icon:before   {
+    content: "";
+    width: 50px;
+    height: 70px;
+    background: url("../img/icons.gif") no-repeat -187px;
+    position: absolute;
+    top: 10px;
+}
+
+.contact-icon   {
+    margin-left: 83px;
+}
+
+.contact-icon:before    {
+    content: "";
+    width: 62px;
+    height: 70px;
+    background: url("../img/icons.gif") no-repeat -236px;
+    position: absolute;
+    top: 14px;
+}
+
+.home-icon:hover, .about-icon:hover, .work-icon:hover, .contact-icon:hover, .blog-icon:hover    {
+    box-shadow: 0px 3px 25.52px 3.48px rgba(112, 112, 112, 0.49);
+}
+
+h1  {
+    color: rgb(110,109,107);
+    font-family: Bebas;
+    font-size: 37px;
+    font-weight: 400;
+}
+
+h1:first-line   {
+    color: rgb(251,156,6);
+    font-family: Calibri;
+    text-transform: uppercase;
+}
+
+.head-meet-the-team {
+    margin-top: 32px;
+    padding-left: 485px;letter-spacing:1px;
+}
+
+.head-meet-the-team div {
+    width: 280px;
+    border-bottom: 2px solid rgb(255,156,0);
+}
+
+.slider div{
+   position: absolute;
+    font-family: Bebas;
+}
+
+.slider div h2  {
+    font-size: 37px;
+    word-spacing: 1px;
+}
+
+.slider div:first-child {
+    width: 351px;
+    height: 59px;
+    top: 130px;
+    left: 221px;
+    color: rgb(251,156,6);
+    background-color: rgba(76,79,79,0.69);
+    padding-left: 30px;
+    padding-top: 7px;
+}
+
+.slider div:last-child  {
+    width: 364px;
+    height: 67px;
+    top: 223px;
+    left: 212px;
+    color: rgb(110,109,107);
+    background-color: rgba(255,194,55,0.702);
+    padding-left: 31px;
+    padding-top: 10px;
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+    background: url("../img/big-orange-bg.png") 100% 100% no-repeat;
+    background-size: cover;
+    margin-top: 132px;
+    position: relative;
+}
+.slider:after {
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: rgb(251,156,6);
+    background-image: linear-gradient(transparent 80%, rgb(246,208,148) 20%);
+    position: absolute;
+    bottom: -5px;
+}
+.slider:before {
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: rgb(252,186,80);
+    background-image: linear-gradient(to top, transparent 80%, rgb(255,246,232) 20%);
+    position: absolute;
+    top: -5px;
+}
+
+.wrapper    {
+    width: 100%;
+    margin: auto;
+    min-height: 100%;
+    height: auto !important;
+    position: relative;
+}
+.head-wrapper   {
+    width: 1200px;
+    height: 128px;
+    margin: 0 auto;
+    z-index: 9999;
+}
+.logo   {
+    display: inline-block;
+    width: 88px;
+    height: 106px;
+    background: url("../img/rabbit-mouth.jpg") no-repeat ;
+    margin-top: 5px;
+    margin-left: 18px;
+}
+.heading    {
+    display: inline-block;
+    margin-left: 42px;
+    vertical-align: top;
+    padding-top: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.four-textareas {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    margin-top: 23px;
+    overflow: hidden;
+}
+
+.row-4  {
+    float: left;
+    width: 256px;
+    padding: 10px 22px;
+    font-family: Calibri;
+    font-size: 15px;
+    line-height: 1.55;
+    letter-spacing: 0.23px;
+}
+
+.row-4 a    {
+    text-decoration: none;
+    font-family: Calibri;
+    text-align: right;
+    font-size: 17px;
+    font-style: italic;
+    color: rgb(255,172,0);
+    margin-left: 168px;
+}
+
+.greyline   {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 5px 0px rgba(211, 210, 210, 0.75);
+    position: absolute;
+    top: 617px;
+    width: 100%;
+    height: 2px;
+    z-index: 2;
+}
+.row-4 a:hover  {
+    color: darkblue;
+}
+
+.meet-the-team, .send-message  {
+    width: 1225px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+section {
+    overflow: hidden;
+    margin-top: 37px;
+}
+
+img {
+    width: 294px;
+    height: 292px;
+    border-radius: 50%;
+    border: 10px solid rgb(255,181,64);
+}
+
+figure {
+    float: left;
+    width: 316px;
+    height: 100%;
+}
+
+h3  {
+    font-family: StMarie;
+    font-size: 40px;
+    color: rgb(255,156,0);
+    font-weight: 400;
+    line-height: 44px;
+}
+
+figcaption{
+    font-family: Calibri;
+    font-size: 22px;
+    color: rgb(110,109,107);
+}
+
+figcaption:first-letter{
+    text-transform: uppercase;
+}
+
+section figure:nth-child(1) figcaption:after    {
+    content: " - Lead Designer";
+    color: rgb(251,156,6);
+    margin-left: 2px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+
+}
+
+section figure:nth-child(2) figcaption:after    {
+    content: " - CEO/Director";
+    color: rgb(251,156,6);
+    margin-left: 4px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+}
+section figure:nth-child(3) figcaption:after    {
+    content: " - Developer";
+    color: rgb(251,156,6);
+    margin-left: 4px;
+    font-weight: 400;
+}
+
+section figure:nth-child(1) figcaption  {
+    margin-left: 61px;
+}
+
+section figure:nth-child(2) figcaption  {
+    margin-left: 56px;
+}
+
+section figure:nth-child(3) figcaption  {
+    margin-left: 74px;
+}
+
+figure p    {
+    margin-top: 28px;
+}
+
+figure p:last-child {
+    color: rgb(51,51,51);
+    font-family: Calibri;
+    font-size: 15px;
+}
+
+section figure:nth-child(1) p:last-child    {
+    margin-top: 20px;
+    margin-left: 38px;
+    margin-right: 10px;
+    letter-spacing: 0.36px;
+    line-height: 1.59;
+
+}
+
+section figure:nth-child(2) p:last-child    {
+    margin-top: 17px;
+    margin-left: 41px;
+    margin-right: 16px;
+    letter-spacing: 0.36px;
+    line-height: 1.55;
+}
+
+section figure:nth-child(3) p:last-child    {
+    margin-top: 15px;
+    margin-left: 38px;
+    margin-right: 16px;
+    letter-spacing: 0.3px;
+    line-height: 1.55;
+}
+
+.send-message p:first-child  {
+    font-family: StMarie;
+    font-size: 40px;
+    color: rgb(255,156,0);
+    margin-left: 435px;
+    letter-spacing: 1px;
+    height: 46px;
+    border-bottom: 2px solid;
+    width: 390px;
+}
+
+.send-message p:first-child:first-letter    {
+    text-transform: uppercase;
+}
+
+.send-message label {
+    font-family: StMarie;
+    font-size: 24px;
+    color: rgb(255,156,0);
+}
+
+.send-message   {
+    margin-top: 35px;
+    padding-bottom: 53px;
+}
+
+input[name="name"]  {
+    margin-left: 56px;
+    background-color: rgb(247, 246, 245);
+    opacity: 0.922;
+    box-shadow: inset 5px 2px 0px 0px rgba(198, 197, 197, 0.75);
+    width: 1070px;
+    height: 33px;
+    z-index: 10;
+}
+
+input[name="email"] {
+    margin-left: 59px;
+    background-color: rgb(247, 246, 245);
+    opacity: 0.922;
+    box-shadow: inset 5px 2px 0px 0px rgba(198, 197, 197, 0.75);
+    width: 1070px;
+    height: 34px;
+    z-index: 11;
+}
+
+input[name="message"]   {
+    margin-left: 29px;
+    margin-top: -4px;
+    background-color: rgb(247, 246, 245);
+    opacity: 0.922;
+    box-shadow: inset 5px 2px 0px 0px rgba(198, 197, 197, 0.75);
+    width: 1070px;
+    height: 90px;
+    z-index: 12;
+}
+
+input[type="submit"] {
+    background-color: rgb(251, 156, 6);
+    width: 174px;
+    height: 44px;
+    z-index: 18;
+    margin-top: 25px;
+    margin-left: 82.2%;
+    font-family: StMarie;
+    font-size: 30px;
+    color: rgb(255,255,255);
+    border-bottom: 1px solid rgb(246,187,92);
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-bottom: 6px;
+}
+
+form p:last-child input:after   {
+    content: '';
+    position: absolute;
+    height: 10px;
+    background-color: red;
+    bottom: -10px;
+}
+
+form p:nth-child(2) {
+    margin-top: 64px;
+    margin-left: 10px;
+    letter-spacing: 0.6px;
+}
+
+form p:nth-child(3) {
+    margin-top: 37px;
+    margin-left: 13px;
+    letter-spacing: 0.4px;
+}
+
+form p:nth-child(4) {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+label[for="email"]  {
+    vertical-align: middle;
+}
+
+label[for="message"]    {
+    vertical-align: top;
+    letter-spacing: 0.4px;
+}
+
+footer p    {
+    font-family: StMarie;
+    font-size: 33px;
+    color: rgb(255,255,255);
+    padding-top: 13px;
+    letter-spacing: 0.84px;
+    width: 975px;
+    margin: 0 auto;
+    padding-left: 14px;
+}
+
+
+
+
+

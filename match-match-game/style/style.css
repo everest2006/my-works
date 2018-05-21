@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+header, main{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    height: 50px;
+    background-color: #a3a7a3;
+    width: 1070px;
+    margin: 0 auto;
+    color: #664a3e;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.wrapper{
+    width: 1200px;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color: rgba(192, 192, 192, 0.31);
+    padding-top: 20px;
+}
+
+.skirt, .difficulty, .new{
+    display: inline-block;
+    width: 163px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    background-color: #a3a7a3;
+}
+
+.card{
+    position: relative;
+    height: 120px;
+    width: 100px;
+    float: left;    
+    transition:1s;
+    transform-style: preserve-3d;
+}
+/*
+.card:hover{
+    transform: rotateY(180deg);
+}
+*/
+.difficulty{
+
+}
+
+.difficulty-list div:nth-child(n){margin: 0 auto;height: 42px;width: 147px;padding-top: 15px;padding-left: 12px;}
+
+
+
+.front{
+    height: 120px;
+    width: 100px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    backface-visibility: hidden;
+}
+.back{
+    height: 120px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+
+.new{
+    margin: 0px 0 0 53.3%;
+}
+
+.skirts-list {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.skirt:hover {
+    height: 290px;
+}
+.difficulty:hover{
+    height: 230px;
+}
+
+.field{
+    width: 1070px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgba(96, 125, 139, 0.43);
+    margin-top: 70px;
+}
+
+.skirt p{
+
+width: 92px;
+
+margin: 17px auto;
+
+text-transform: capitalize;
+}
+
+.difficulty p {
+    width: 140px;
+    margin: 17px auto;
+    text-transform: capitalize;
+}
+
+.new p{
+    width: 97px;
+    margin: 17px auto;
+    text-transform: capitalize;
+}
+
+.skirts-list div:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    background: url("../img/pikachu.png") no-repeat -860px -9px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+.skirts-list div:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    background: url("../img/smiles.png") no-repeat -975px -18px;
+    margin: 20px auto;
+    border: 1px solid;
+
+}
+
+.skirts-list div:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    background: url("../img/uefa.png") no-repeat -930px -18px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+.skirts-list div:nth-child(n):hover {
+    box-shadow: 0 0 30px red;;
+    cursor:pointer;
+}
+
+.difficulty-list div:nth-child(n):hover{
+    background-color: #687a94;
+    cursor:pointer;
+}
+.skirt, .difficulty, .skirt p:hover, .difficulty p:hover{
+    cursor:default;
+}
+.new, .new p:hover{
+    cursor:pointer;
+}
+.new:hover{
+    background-color: #687a94;
+}
+.low{
+    margin-left: 95px;
+    margin-top: 80px;
+}
+.medium{
+    margin-left: 67px;
+    margin-top: 35px;
+}
+.hight{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.description{
+
+padding: 20px 0 0 40px;
+}
+.description p{
+
+width: 645px;
+
+margin: 0 auto;
+
+text-align: center;
+
+font-size: 25px;
+
+line-height: 2;
+
+font-weight: 600;
+}
+.description ol{
+    
+margin-top: 20px;
+    
+font-size: 20px;
+    
+line-height: 2;
+    
+color: #687a94;
+}
+
+
+.overlay {
+    background: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    opacity: .5;
+}
+.visible {
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    overflow: hidden;
+    z-index: 2000;
+    width: 500px;
+    padding: 0px;
+    margin-left: -250px;
+    text-transform: uppercase;
+    padding-top: 50px;
+    border: 3px solid;   
+}
+.win button {
+    float: right;
+    line-height: 20px;
+    margin: 1.2em;
+    border: none;
+    background: transparent;
+    color: blue;
+}
+.win button[type="button"]:hover {
+    cursor: pointer;
+    color: navy;
+    text-decoration: underline;
+}
+.win{
+    display: none;    
+}
+.win h2{width: 240px;margin: 0 auto;}
+.win p{
+ font-size: 19px;   
+width: 180px;
+
+    
+margin: 10px auto;
+}
+.time{height: 30px;width: 244px;margin: 0 auto;font-size: 30px;}
+.message-skirt, .message-difficulty{
+    width:400px;
+    height:28px;
+    margin:30px 40%;
+    font-size:25px;
+    color:#687a94;
+    
+}
